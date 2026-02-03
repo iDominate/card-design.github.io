@@ -72,6 +72,7 @@ body {
 @media screen and (min-width: 1024px){
     .parent-container {
         width: 45%;
-        height: 37%;
+        height: 40%;
     }
 }
+
