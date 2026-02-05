@@ -16,13 +16,14 @@ body {
     background-color: #E3F2FD;
     display: grid;
     place-items: center;
+    font-size: .5rem;
 }
 
 .parent-container {
     background-image: url("./images/bg.png");
-    width: 70%;
-    height: 29%;
-    padding: 1.3rem;
+    width: min(50%,65%);
+    height: 20%;
+    padding: 1.0rem;
     border-radius: .5rem;
 }
 
@@ -36,12 +37,16 @@ body {
     align-items: center;
 }
 .logo-brand img {
- height: 2rem;
- margin-right: .8rem;
+ height: 1rem;
+ margin-right: .6rem;
+}
+
+.logo-brand :last-child {
+    font-size: .5rem;
 }
 
 .chip-img {
-    height: 2rem;
+    height: 1rem;
 }
 
 .card-number {
@@ -50,11 +55,12 @@ body {
 
 .card-number :first-child {
     margin-bottom: .7rem;
-    font-size: .8rem;
+    font-size: .5rem;
 }
 
 .card-number :last-child {
-    letter-spacing: .15rem;
+    letter-spacing: .10rem;
+    font-size: .5rem;
 }
 
 .card-info {
@@ -65,19 +71,44 @@ body {
 
 .card-info :first-child {
     align-self: flex-end;
+    font-size: .5rem;
+}
+
+.valid-date p {
+    font-size: .5rem;
 }
 
 
 @media screen and (min-width: 767px){
     .parent-container {
         height: 27%;
+        width: min(50%, 55%);
+    }
+    .parent-container .card-header img {
+        height: 2rem;
+    }
+    .card-header .logo-brand p {
+        font-size: 1.5rem;
+    }
+    .card-header .logo-brand img {
+        height: 1.5rem;
+    }
+    .card-header .logo-brand :last-child {
+        font-size: 1.5rem;
+    }
+    .parent-container .card-number * {
+        font-size: 1rem;
+    }
+
+    .parent-container .card-info * {
+        font-size: 1rem;
     }
 }
 
 @media screen and (min-width: 1024px){
     .parent-container {
         width: min(40%, 45%);
-        height: max(35%, 40%);
+        height: min(26%, 40%);
     }
 }
 
