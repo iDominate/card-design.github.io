@@ -21,8 +21,8 @@ body {
 
 .parent-container {
     background-image: url("./images/bg.png");
-    width: min(50%,65%);
-    height: 20%;
+    width: min(69%,70%);
+    height: 20% ;
     padding: 1.0rem;
     border-radius: .5rem;
 }
@@ -105,16 +105,16 @@ body {
     }
 }
 
-@media screen and (min-width: 1024px){
-    .parent-container {
+@media screen and (min-width: 1023px){
+    body .parent-container {
         width: min(40%, 45%);
-        height: min(26%, 40%);
+        height: min(27%, 42%) ;
     }
 }
 
 @media screen and (min-height: 430px) and (max-height: 560px){
-    .parent-container {
-        width: 37%;
-        height: clamp(52% ,61% , 63%);
+    body .parent-container {
+        width: 40%;
+        height: clamp(55% ,58% , 60%);
     }
 }
